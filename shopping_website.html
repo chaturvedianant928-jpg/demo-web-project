@@ -100,19 +100,7 @@ font-size:1rem;
 <body>
 
 <div class="cursor" id="cursor"></div>
-<script>
-const cursor = document.getElementById('cursor');
-let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
-document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
-function animate() {
-cursorX += (mouseX - cursorX) * 0.16;
-cursorY += (mouseY - cursorY) * 0.16;
-cursor.style.left = cursorX + 'px';
-cursor.style.top  = cursorY + 'px';
-requestAnimationFrame(animate);
-}
-animate();
-</script>
+
 
 <header>
 <div style="max-width:1440px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0 60px; height:90px;">
@@ -259,4 +247,5 @@ style="width:360px; height:52px; padding:0 60px 0 28px; border:none; border-radi
 </footer>
 
 </body>
+
 </html>
